@@ -1,0 +1,39 @@
+{
+  "connection": "default",
+  "collectionName": "lamps",
+  "info": {
+    "name": "Lamps"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "lamp_img": {
+      "collection": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": true
+    },
+    "lamp_name": {
+      "type": "string",
+      "required": true
+    },
+    "lamp_price": {
+      "type": "decimal"
+    },
+    "sku": {
+      "type": "string",
+      "required": true
+    },
+    "lamp_description": {
+      "type": "richtext"
+    },
+    "lamp_attributes": {
+      "type": "json"
+    },
+    "g": {
+      "type": "datetime"
+    }
+  }
+}

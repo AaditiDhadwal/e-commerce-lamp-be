@@ -1,0 +1,22 @@
+{
+  "info": {
+    "name": "login"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "Email": {
+      "type": "email",
+      "required": true,
+      "unique": true
+    },
+    "Password": {
+      "type": "password",
+      "required": true
+    }
+  },
+  "connection": "default",
+  "collectionName": "logins"
+}
