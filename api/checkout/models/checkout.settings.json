@@ -1,0 +1,23 @@
+{
+  "connection": "default",
+  "collectionName": "checkouts",
+  "info": {
+    "name": "Checkout"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "Quantity": {
+      "type": "integer"
+    },
+    "lamp": {
+      "model": "lamps"
+    },
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user"
+    }
+  }
+}

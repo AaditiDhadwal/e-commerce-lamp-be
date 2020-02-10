@@ -31,9 +31,6 @@
     },
     "lamp_attributes": {
       "type": "json"
-    },
-    "g": {
-      "type": "datetime"
     }
   }
 }
